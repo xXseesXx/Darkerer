@@ -2,8 +2,8 @@
 	"modListVersion": 2,
 	"modList": [{
 		"modid": "${modId}",
-		"name": "${modName}",
-		"description": "Makes the world a lot darker",
+		"name": "NotSoDarkerer",
+		"description": "Disables Darkerer's darkness effects while staying compatible with servers",
 		"version": "${modVersion}",
 		"mcversion": "${minecraftVersion}",
 		"url": "https://github.com/glowredman/Darkerer",

@@ -22,6 +22,14 @@ public class DarkererEventHandler {
         }
         EntityPlayer player = FMLClientHandler.instance()
             .getClientPlayerEntity();
+
+        // Check the client-side config option first
+        if (!DarkererConfig.enableDarknessEffects) {
+            DarkererCore.enabled = false;
+            return;
+        }
+
+        // Original logic: enable darkness based on dimension
         DarkererCore.enabled = player != null && !ArrayUtils.contains(DarkererConfig.dimBlocklist, player.dimension);
     }
 
